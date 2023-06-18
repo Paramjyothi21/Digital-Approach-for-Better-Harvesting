@@ -1,0 +1,19 @@
+{% extends 'layout1.html' %}
+
+{% block nav %}
+<a href="{{ url_for('home') }}"><i></i>Home</a>
+<li><a href="CropRecommendation.html" class="active">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+<li><a href="PesticideRecommendation.html">Pesticide</a></li>
+<li><a href="weed.html">WeedIdentification</a></li>
+<li><a href="Costofcultivation.html">Costofcultivation</a></li>
+{% endblock %}
+
+
+{% block body %}
+<h1 class="text-center" style="margin-top:5%;">
+    <b>You should grow <span class="gold-text"><i> {{ prediction }} </i></span>in your farm</b>
+    <br><br>
+    <img src="{{url_for('static',filename=pred)}}" width="780px" height="450px" alt={{prediction}}>
+</h1>
+{% endblock %}

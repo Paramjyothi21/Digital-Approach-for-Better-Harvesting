@@ -1,0 +1,26 @@
+
+{% extends "layout1.html" %}
+
+{% block nav %}
+<li><a href="index.html">Home</a></li>
+<li><a href="CropRecommendation.html">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+<li><a href="PesticideRecommendation.html">Pesticide</a></li>
+<li><a href="weed.html">WeedIdentification</a></li>
+<li><a href="Costofcultivation.html">Costofcultivation</a></li>
+
+{% endblock %}
+
+{% block body %}
+<br /><br />
+<div>
+<h2 style="text-align: center; margin: 0px; color: black">
+    <b><p>TOTAL COST OF CULTIVATION PER HECTARE  : {{ costofcultivation }} <br><br>YIELD IN KG PER HECTARE : {{ totalyield }}</p></i></b></h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2><b> CHECK OUT Cost Of Cultivation Analysis here</b><li><a href="Costofcultivation.html">CoCDataAnalysis</a></li></h2>
+</div>
+        
+{% endblock %}

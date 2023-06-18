@@ -1,0 +1,167 @@
+{% extends "layout1.html" %}
+
+{% block nav %}
+<a href="{{ url_for('home') }}"><i class="fas fa-home"></i>Home</a>
+<li><a href="CropRecommendation.html">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+<li><a href="PesticideRecommendation.html">Pesticide</a></li>
+<li><a href="weed.html">WeedIdentification</a></li>
+<li><a href="Costofcultivation.html">Costofcultivation</a></li>
+{% endblock %}
+
+{% block body %}
+<section class="tm-welcome-section">
+    <div class="container tm-position-relative">
+      <div class="tm-lights-container">
+        <img src="{{ url_for('static', filename='img/logoo.jpg') }}" alt="Light" class="light light-1" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/design2.png') }}" alt="Light" class="light light-3" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/topimage.jpg') }}" alt="Light" class="light light-3" height="188px" width="240px">
+        <br>
+      </div>
+      <div class="row tm-welcome-content">
+        <br><br>
+        <h2 class="white-text tm-handwriting-font tm-welcome-header">
+          <img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line"></h2>
+        <h2 class="gold-text tm-welcome-header-2">DigiHarvest</h2>
+        <p class="gray-text tm-welcome-description"><span
+            class="gold-text">Farming is the practise of cultivating the soil, producing crops, and raising
+            livestock. </span> We take of your soil's health. We at <span class="gold-text">
+            DigiHarvest</span>, honor <span
+                class="gold-text">the Indian Farmer's love, hard work and character.</span>
+                Farmers have traditionally used traditional farming techniques. These techniques were not precise, which reduced productivity
+                and took a long time. Precise farming increases productivity by precisely determining the steps
+                that must be performed at the appropriate time. Precision farming includes predicting weather
+                conditions, analyzing soil, recommending crops for cultivation, and determining the amount of
+                fertilizers and pesticides that must be used. Precise Farming collects data using advanced
+                technologies such as IoT, Data Mining, Data Analytics, and Machine Learning.Collect data, train
+                systems, and predict outcomes. With the assistance of technology Precise farming aids in the
+                reduction of manual labour and the increase of productivity. Farmers have recently faced a
+                number of challenges, including crop failure due to insufficient rainfall, soil infertility, and so on.
+                Because of environmental changes, the proposed work assists in determining how to manage
+                crops and harvest in an efficient manner. It directs a person's farming strategy. The goal of this
+                work is to assist an individual in cultivating crops efficiently, resulting in high productivity at a
+                low cost. It also aids in estimating the total cost of cultivation. This would assist an individual in
+                pre-planning activities prior to cultivation.Hence this work focuses on the steps involved in
+                cultivation of crop.</p>
+        <br>
+        <img src="{{ url_for('static', filename='img/design1.jpeg') }}" alt="Light" class="light light-1" height="240px" width="300px">
+        <br>
+        <br>
+        <img src="{{ url_for('static', filename='img/main-img.jpeg') }}" alt="Table Set"  width="125%">
+      </div>
+      
+    </div>
+  </section>
+  <div class="tm-main-section light-gray-bg">
+    <div class="container" id="main">
+      <section class="tm-section tm-section-margin-bottom-0 row">
+        <div class="col-lg-12 tm-section-header-container">
+          <h2 class="tm-section-header gold-text tm-handwriting-font">Our Services</h2>
+          <div class="tm-hr-container">
+            <hr class="tm-hr">
+          </div>
+        </div>
+        <div class="col-lg-12 tm-popular-items-container">
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/card1.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">C</span>rop Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Which crop to grow, that is ideally suited to conditions?
+                Make an informed decision before starting the cultivation of crops.</p>
+              <div class="order-now-container">
+                <a href="CropRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/card2.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">F</span>ertilizer Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Which fertilizer to choose for the cultivated soil and prescribed crop for optimum production?
+              Provide your crops, the essential nutrients.</p>
+              <div class="order-now-container">
+                <a href="FertilizerRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/card3.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">P</span>esticide Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Pests are a big threat.
+                Use Irrigreat to know which pesticide to use to control pests before they cause potential damage to your
+                crop?</p>
+              <div class="order-now-container">
+                <a href="PesticideRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<footer>
+    <div class="tm-black-bg">
+      <div class="container">
+        <div class="row margin-bottom-60">
+          <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
+            <h3 class="tm-footer-div-title">Our Team</h3>
+            <ul>
+              <li>Riyaz Baba Shaik</li>
+              <li>Param Jyothi</li>
+              <li>Gopinath</li>
+            </ul>
+          </nav>
+          <div class="col-lg-5 col-md-5 tm-footer-div">
+            <h3 class="tm-footer-div-title">Few words for our Indian Farmers</h3>
+            <p class="margin-top-15" align="justify">For this one farmer the worries are over, lie down and rest your head,
+              Your time has been and struggles enough, put the tractor in the shed.</p>
+
+             <p class="margin-top-15" align="justify"> Years were not easy, many downright hard, but your faith in God transcended,
+               Put away your tools and sleep in peace. The fences have all been mended.</p>
+
+              <p class="margin-top-15" align="justify">You raised a fine family, worked the land well and always followed the Son,
+                Hang up your shovel inside of the barn; your work here on earth is done.</p>
+
+              <p class="margin-top-15" align="justify">A faith few possess led your journey through life, often a jagged and stony way,
+                The sun is setting, the cattle are all bedded, and here now is the end of your day.</p>
+
+              
+          </div>
+          <div class="col-lg-4 col-md-4 tm-footer-div">
+            <h3 class="tm-footer-div-title">Connect With Us</h3>
+       
+            Riyaz baba Shaik &nbsp;
+              <a href="" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+              <a href="" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+              <a href="" class="tm-social-icon"><i class="fa fa-medium"></i></a>
+              <a href="" class="tm-social-icon"><i class="fa fa-github"></i></a>
+         
+              <br><br>Param jyothi&nbsp;
+              <a href="" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+              <br><br>Gopinath&nbsp;
+              <a href="" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="container">
+        <div class="row tm-copyright">
+          <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2023 @Team RPG</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+{% endblock %}

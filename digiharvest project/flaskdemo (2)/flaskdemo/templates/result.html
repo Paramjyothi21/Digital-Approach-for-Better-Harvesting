@@ -1,0 +1,29 @@
+
+
+{% extends "layout1.html" %}
+
+{% block nav %}
+<li><a href="index.html">Home</a></li>
+<li><a href="CropRecommendation.html">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+<li><a href="PesticideRecommendation.html" class="active">Pesticide</a></li>
+<li><a href="weed.html">WeedIdentification</a></li>
+<li><a href="Costofcultivation.html">Costofcultivation</a></li>
+
+{% endblock %}
+
+{% block body %}
+<br /><br />
+<div>
+    
+
+<h2 style="text-align: center; margin: 0px; color: black">
+    <b><p>Identified Weed, {{ weed_identified }}!</p></i></b></h2>
+    <h2 class="gold-text tm-welcome-header-2"> VISIT BOTTOM LINK TO KNOW HERBICIDES</h2>
+    <br/>
+    <br/>
+    <h2><a href="herbicides.html">Find Herbicides</a></h2>
+    
+</div>
+        
+{% endblock %}

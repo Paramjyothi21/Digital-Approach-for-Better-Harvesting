@@ -1,0 +1,89 @@
+{% extends "layout1.html" %}
+
+{% block nav %}
+<a href="{{ url_for('home') }}"><i ></i>Home</a>
+<li><a href="CropRecommendation.html">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+<li><a href="PesticideRecommendation.html">Pesticide</a></li>
+<li><a href="weed.html">WeedIdentification</a></li>
+<li><a href="Costofcultivation.html" class="active">Costofcultivation</a></li>
+{% endblock %}
+
+{% block body %}
+<style>
+.myDiv {
+    border: 5px outset green;
+    background-color:lightblue;
+    text-align: center;
+  }
+</style>
+
+<section class="tm-welcome-section">
+    <div class="container tm-position-relative">
+      <div class="tm-lights-container">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-1" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-2" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-3" height="188px" width="200px">
+        <br>
+      </div>
+      <div class="row tm-welcome-content">
+        <br><br>
+        <h2 class="white-text tm-handwriting-font tm-welcome-header">
+          <img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line">&nbsp;COST OF CULTIVATION ANALYSIS&nbsp;<img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line"></h2>
+            <h2 class="gold-text tm-welcome-header-2"> VISIT BOTTOM LINK TO PREDICT TOTAL YIELD PRODUCTION</h2>
+            <br/>
+            <br/>
+            <h2><a href="Yieldprediction.html">Predict Total Yield</a></h2>
+      </div>
+      <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">CROP VARIETIES</h2>
+      <img src="{{ url_for('static', filename='Image/Crops.JPG') }}" alt="crops" class="tm-crops img-responsive" width="100%">
+      <p>Observation:There are 23 types of crops listed in the dataset and we visualizes the top 10 crops in the pie chart.</p><br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">AREA WISE PRODUCTION</h2>
+      <img src="{{ url_for('static', filename='Image/Areawiseproduction.JPG') }}" alt="Areawiseproduction" class="tm-area-prod img-responsive" width="100%"><p>Observation:Fruits and Vegetables cultivated over a larger area </p><br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">COST OF CULTIVATION PER HECTARE</h2>
+      <img src="{{ url_for('static', filename='Image/costofcultperhectare.JPG') }}" alt="costofcultperhectare" class="tm-costofcult-perhect img-responsive" width="100%"><p> Observation: Andrapradesh is the state having Highest range of Cost of cultivation per hectare</p><br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">CROP VARIETIES</h2>
+      <img src="{{ url_for('static', filename='Image/cropvarieties.JPG') }}" alt="cropvarieties" class="tm-crop-varities img-responsive" width="100%">Observation: Among the 23 crops Paddy possess more number of varieties i.e 7 varieties of paddy Cultivated in India<br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">CROP WISE YIELD</h2>
+      
+      <img src="{{ url_for('static', filename='Image/cropwiseyield.JPG') }}" alt="cropwiseyield" class="tm-cropwise-yield img-responsive" width="100%"> Observtion: Sugarcane having the Highest Yield of Production and Moong crop at the least position<br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">CROP  PRODUCTION OF TIMELINE(2004-2012)</h2>
+      <img src="{{ url_for('static', filename='Image/cropprod04-12.JPG') }}" alt="cropprod" class="tm-crop-prod img-responsive" width="100%"> Observation :The above Report illustrates the crop production over the timeline 2004-2012<br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">YEAR WISE PRODUCTION</h2>
+      <img src="{{ url_for('static', filename='Image/Yearwiseproduction.JPG') }}" alt="Yearwiseproduction" class="tm-yearwiseprod img-responsive" width="100%">Observation:Over a period of 2006-2011 The cultivation of spices dramatically increases<br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">YIELD WISE PRODUCTION</h2>
+      <img src="{{ url_for('static', filename='Image/Yieldwiseproduction.JPG') }}" alt="Yieldwiseproduction" class="tm-yieldwiseprod img-responsive" width="100%"> Observation:Spices Yield production Increases massively from 2006-2011<br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">STATE WISE DETAILS</h2>
+      <img src="{{ url_for('static', filename='Image/statewisedetails.JPG') }}" alt="statewisedetails" class="tm-statewise-details img-responsive" width="100%">Observation: Andrapradesh stood at first place having Highest cost of cultivation in our country<br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">STATE WISE YIELD</h2>
+      <img src="{{ url_for('static', filename='Image/statewiseyield.JPG') }}" alt="statewiseyield" class="tm-statewise-yield img-responsive" width="100%">Observation:Karnataka,TamilNadu and Andrapradesh states having Highest Yield of Production<br><br>
+    </div>
+    <div class="myDiv"style="margin-top:100px">
+      <h2 class="gold-text tm-welcome-header-2">TOTAL YIELD PRODUCTION </h2>
+      <img src="{{ url_for('static', filename='Image/totalproduction06-11.JPG') }}" alt="totalproduction06-11" class="tm-total-prod img-responsive" width="100%"> Observation:Spices having the Highest Yield of Total Production<br><br>
+    </div>
+  </section>
+  
+    
+{% endblock %}
